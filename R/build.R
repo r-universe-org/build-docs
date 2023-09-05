@@ -50,6 +50,7 @@ build_site <- function(repo_url, subdir = "", registry = NULL){
   try(install_pkgdown_packages(pkginfo))
   Sys.setenv(R_REMOTES_NO_ERRORS_FROM_WARNINGS=TRUE)
   remotes::install_deps(dependencies = TRUE, upgrade = TRUE)
+  remotes::install_deps(dependencies = "Config/needs/website", upgrade = TRUE)
   remotes::install_local()
 
   # Website destination path
