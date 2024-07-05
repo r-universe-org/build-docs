@@ -17,4 +17,4 @@ Imports:
   yaml,
   zip
 Remotes:
-    ropensci/rotemplate
+    ropensci/rotemplate@pkgdown-2.0.9
