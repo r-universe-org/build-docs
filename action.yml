@@ -13,6 +13,10 @@ inputs:
   deploy_url:
     description: 'deprecated'
     required: false
+outputs:
+  RVERSION:
+    description: 'Version of R used'
+
 runs:
   using: 'docker'
   image: 'docker://ghcr.io/r-universe-org/build-docs'
